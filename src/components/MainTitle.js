@@ -1,25 +1,24 @@
 import React from 'react'
 import { Button, Container, Row, Col } from 'react-bootstrap'
 import "./btn.css" 
-import "./App.css";
 
 function MainTitle() {
   return (
+   
+      <div className="main-title">
+        <div className="title-container">
+            <h4>
+              Internship
+            </h4>
+        </div>
+        <div className="add-button-container">
+            <button className="home-title-btn">
+              + Create New Internship
+            </button>
+        </div>
+        
+      </div>
 
-    <Container>      
-      <Row className="main-title-row">
-        <Col md={{ span: 7, offset: 2 }} > 
-          <h4>
-            Internship
-          </h4>
-        </Col>
-        <Col >
-          <Button className="home-title-btn" size="sm">
-            + Create New Internship
-          </Button>
-        </Col>
-      </Row>
-    </Container>
 
 
   )
